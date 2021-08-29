@@ -83,10 +83,10 @@ def AddEmp():
             try:
                 dynamodb_client = boto3.client('dynamodb', region_name='us-east-2')
                 dynamodb_client.put_item(
-                 TableName='employee_image_table',
+                 TableName='users_image_table',
                     Item={
-                     'empid': {
-                          'N': emp_id
+                     'userid': {
+                          'N': user_id
                       },
                       'image_url': {
                             'S': object_url
