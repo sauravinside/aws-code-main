@@ -2,83 +2,57 @@
 <html>
 <head>
 	<title>Add Employee Information</title>
+	 
 </head>
-<style>
-body {
-  background-image: linear-gradient(to right, #4568dc 0%, #b06ab3 100%);
-}
-.app-form-button {
-  background-color: #00d263;
-  border-radius: 25px;  
-  border: none;
-  color: #00d263;
-  font-size: 14px;
-  outline: black;
-}
-
-.gradient-button {
-    margin: 10px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 12px;
-    bottom-padding: 15px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: #FFF;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 20px;
-    width: 200px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    cursor: pointer;
-    display: inline-block;
-    border-radius: 25px;
-}
-
-.gradient-b{
-    margin: 12px;
-    font-family: "Arial Black", Gadget, sans-serif;
-    font-size: 12px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFF;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 20px;
-    width: 200px;
-    box-shadow: 0 1px 3px rgba(0,0,0,1), 0 1px 2px rgba(0,0,0,0.5);
-    display: inline-block;
-    border-radius: 20px;
-}
-
-</style>
 <center>
-	<font color="white" size="4" style="font-family: Gadget">
+	<font color="black" size="3.5" style="font-family: avenir">
 
-		<h1 style="color: White">Employee Database</h1>
+		<h1 style="color: rgb(0,0,0)">EMPLOYEE DATABASE</h1>
+		
 
-		<body bgcolor="lightgrey">
+		  
+		 
+		 
+  
+		<style>
+body 
+{
+  background-image: url('bg4.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style> 
+			
 
 			<form action="/addemp" autocomplete="on" method = "POST" enctype="multipart/form-data">
 
-				<button type="submit" formaction="/getemp" style="background: grey; height: 45px; width: 200px; color:white; font-family: sans-serif; border-radius: 25px;">GET EMPLOYEE INFORMATION</button><br><br>
+				<button type="submit" formaction="/getemp" style="background: rgb(147,112,219); height: 45px; width: 200px; color:white; font:oblique; border-radius: 12px; border: none;" >GET EMPLOYEE INFORMATION</button><br><br>
+				 
 
-		  		Employee ID:<br> <input style="height:24px;font-size:14pt; color:grey;" type="number" name="emp_id" autofocus size="40"><br><br>
+		  		<b> Employee ID:<b> <br> <input style="height:25px;font-size:14pt; color:grey; " type="number" name="emp_id" autofocus size="40"><br><br>
 
-		  		First Name:<br> <input style="height:24px;font-size:14pt;color:grey;" type="text" name="first_name" ><br><br>
+		  		First Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="first_name" ><br><br>
 
-		  		Last Name:<br> <input style="height:24px;font-size:14pt;color:grey;" type="text" name="last_name"><br><br>
+		  		Last Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="last_name"><br><br>
 
-		  		Primary Skills:<br> <input style="height:24px;font-size:14pt;color:grey;" type="text" name="pri_skill"><br><br>
+		  		Primary Skills:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="pri_skill"><br><br>
 
-		  		Location:<br> <input style="height:24px;font-size:14pt;color:grey;" type="text" name="location"><br><br>
+		  		Location:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="location"><br><br>
 
-		  		Image: <input type=file name="emp_image_file" style="height:2nt-size:14pt;color:5px;"> <br><br>
+		  		Image: <input type=file name="emp_image_file" style="height:25px;font-size:14pt;color:grey; border-radius: 2px;"> <br><br>
 
-				<button class="gradient-button" type="submit" style="background: grey; height: 45px; width: 200px; color: white; size: 5; font:oblique;">UPDATE DATABASE</button>
+		  		<button type="submit" style="background: rgb(255,105,180); height: 45px; width: 200px; color: black; size: 5; font:oblique; border-radius: 12px; border: none;">UPDATE DATABASE</button><br><br>
 
 			</form>
-<a href=/about class="gradient-b" type="submit" style="background: grey; height: 45px; width: 200px; color: black; size: 5; monospace; padding-top: 10px;  font-size: 15px; background-color: #11f592;">About Us</a>
+
+
+
+
+<button class="GFG" style="background: rgb(127,255,0); height: 45px; width: 200px; color: black; size: 5; font:oblique; border-radius: 12px; border: none;" 
+    onclick="window.location.href = 'http://add-emp-project5.s3-website-us-east-1.amazonaws.com';">
+        About Us
+    </button>
 		</body>
 
 	</font>
